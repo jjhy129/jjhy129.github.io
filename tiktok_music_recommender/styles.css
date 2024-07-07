@@ -107,6 +107,41 @@ body {
     box-sizing: border-box;
 }
 
+
+.title-container {
+    height: 40px; /* Example: Fixed height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.author-container {
+    height: 30px; /* Example: Fixed height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.content-container {
+    padding: 10px 0; /* Example: Fixed padding size for content */
+    align-items: center;
+}
+
+.play-digg-container {
+    font-size: 12px; /* Example: Smaller font size */
+    color: #666; /* Example: Lighter color */
+    margin-top: 15px; /* Example: Margin between play/digged counts and other content */
+    align-items: center;
+}
+
+.play-digg {
+    font-size: 12px; /* Example: Smaller font size */
+    color: #666; /* Example: Lighter color */
+    margin-right: 10px; /* Example: Margin between play and digged counts */
+}
+
 .music-card img {
     width: 100px;
     height: 100px;
