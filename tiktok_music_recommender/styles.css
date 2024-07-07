@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tag-input-box {
+    padding: 20px;
+    background-color: #f0eef7;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.tag-input-box input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+#add-tag-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6b47dc;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tags {
+    display: flex;
+    padding-top: 7px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.tag span {
+    margin-right: 10px;
+}
+
+.tag .remove-tag {
+    cursor: pointer;
+    color: red;
+}
+
+.search-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6b47dc;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.music-recommendations {
+    margin-top: 20px;
+    display: none;
+}
+
+.music-recommendations h2 {
+    margin-bottom: 20px;
+}
+
+.music-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    background-color: #f0eef7;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.music-card img {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.music-card h3 {
+    margin: 10px 0 5px;
+}
+
+.music-card p {
+    margin: 5px 0;
+}
+
+.music-card button, .music-card a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #6b47dc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 100%; /* Ensures buttons are the same width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.less-obvious {
+    font-size: 12px; 
+    color: #777; 
+}
+
+#music-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #6b47dc;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#music-bar #current-song-info {
+    flex-grow: 1;
+}
+
+#music-bar #controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#music-bar #controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#progress-bar {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+#loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+#loading img {
+    width: 50px;
+    height: 50px;
+}
+
+#upload-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#upload-status {
+    margin-top: 20px;
+    font-size: 16px;
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
